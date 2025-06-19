@@ -159,17 +159,22 @@ body {
 }
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="25,25" size="100,100">&lt;p style=&quot;font-size: 24px;&quot;&gt;&lt;center&gt;Module 3.0 Secure Your Workflow: 
-Welcome to the Compliance Habits Game!&lt;/center&gt;&lt;/p&gt;
-&lt;div class=&quot;callout-box&quot;&gt; In this interactive activity, you will navigate common workplace situations and make decisions that impact cybersecurity compliance.
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="25,25" size="100,100">&lt;p style=&quot;font-size: 28px;&quot;&gt;&lt;center&gt;Module 3.0 Secure Your Workflow: 
+&lt;/center&gt;&lt;/p&gt;
+&lt;div class=&quot;callout-box&quot;&gt;Welcome to the Secure Your Workflow scenario-based interactive module! In this activity, you will:
+*Select a team below,
+*Be briefed on organizational cyber best practices,
+*Navigate common workplace situations, and
+*Make decisions that impact cybersecurity compliance.
 
-Your goal is to practice applying the key operational behaviors by:
-✅ Avoiding risky behaviors in daily communication, file handling, and access control
-✅ Selecting secure practices for managing project files and permissions
-✅ Applying the need-to-know principle in realistic workplace scenarios
-✅ Demonstrating secure task execution through role-based compliance decisions
+Each choice you make will either strengthen or weaken your organization’s security compliance posture and build cyber-ready habits.
 
-Each choice you make will either strengthen or weaken your organization’s security compliance posture and build audit-ready habits. &lt;/div&gt;
+Your goal is to score 60 (or more) points by correctly applying the key operational behaviors by:
+✅ Avoiding risky behaviors in daily communication, file handling, and access control.
+✅ Selecting secure practices for managing project files and permissions.
+✅ Applying the need-to-know principle in realistic workplace scenarios.
+✅ Demonstrating secure task execution through role-based compliance decisions.
+ &lt;/div&gt;
 &lt;div class=&quot;callout-box&quot;&gt; Let’s begin! How secure is your workflow?
 Choose your team:
 *[[Training Department-&gt;Role Training]]
@@ -180,24 +185,27 @@ Choose your team:
 &lt;&lt;set $score = 0&gt;&gt;
 &lt;&lt;set $flags = []&gt;&gt;
 &lt;&lt;set $role = &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Role Training" tags="" position="150,25" size="100,100">&lt;&lt;set $role = &quot;Training Department&quot;&gt;&gt;
-&lt;p style=&quot;font-size: 24px;&quot;&gt;&lt;center&gt;Welcome, Training Team Member!&lt;/center&gt;&lt;/p&gt;
+&lt;p style=&quot;font-size: 26px;&quot;&gt;&lt;center&gt;Welcome, Training Team Member!&lt;/center&gt;&lt;/p&gt;
 &lt;div class=&quot;callout-box&quot;&gt;Between building courses and coordinating learning events, you have also been asked to squeeze in today’s cybersecurity briefing. 
+
 You never know when a “quick task” or email will test your secure habits. Throughout your day, the choices you make can help (or hurt) your organization’s compliance posture.
 &lt;div class=&quot;callout-box&quot;&gt;[[Let’s get started; because training never stops, and neither does cyber readiness!-&gt;Risky behaviors]] &lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Role BusinessDev" tags="" position="275,25" size="100,100">&lt;&lt;set $role = &quot;Business Development Department&quot;&gt;&gt;
-&lt;p style=&quot;font-size: 24px;&quot;&gt;&lt;center&gt;Welcome, Business Development Team Member!&lt;/center&gt;&lt;/p&gt;
+&lt;p style=&quot;font-size: 26px;&quot;&gt;&lt;center&gt;Welcome, Business Development Team Member!&lt;/center&gt;&lt;/p&gt;
 &lt;div class=&quot;callout-box&quot;&gt;While chasing new opportunities and answering urgent client emails, you’ve also been asked to work through a short cybersecurity briefing today. Easy, right? 
-But be warned between fast deals and fast clicks, you will face moments that test your compliance instincts. Your actions today can directly impact audit readiness.
+
+But be warned! Between fast deals and fast clicks, you will face moments that test your compliance instincts. Your actions today can directly impact cyber readiness.
 &lt;div class=&quot;callout-box&quot;&gt;[[Let’s dive in; because deals are moving fast, but security still comes first.-&gt;Risky behaviors]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Role Finance" tags="" position="400,25" size="100,100">&lt;&lt;set $role = &quot;Finance Department&quot;&gt;&gt;
-&lt;p style=&quot;font-size: 24px;&quot;&gt;&lt;center&gt;Welcome, Finance Team member!,&lt;/center&gt;&lt;/p&gt;
+&lt;p style=&quot;font-size: 26px;&quot;&gt;&lt;center&gt;Welcome, Finance Team Member!&lt;/center&gt;&lt;/p&gt;
 &lt;div class=&quot;callout-box&quot;&gt;Amid spreadsheets, approvals, and payment requests, you’ve been asked to review a quick cybersecurity briefing today. Keep an eye out! 
+
 You will face interruptions and choices where secure handling of financial data really matters. Every action you take contributes to keeping your department (and the entire organization) audit ready.
 &lt;div class=&quot;callout-box&quot;&gt;[[Let’s begin; because in finance, accuracy and security go hand in hand.-&gt;Risky behaviors]] &lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Scenario 1" tags="" position="525,25" size="100,100">&lt;div class=&quot;callout-box&quot;&gt;It’s 9:00 AM. 
 John from Sales pings you as soon as he sees that you are available in chat!&lt;br&gt;
-&quot;Hey!! GM! Can you email me that client list for my meeting at 9:30? I&#39;m pretty sure you sent it yesterday, but I can&#39;t find it now. Not enough coffee yet! LOL &quot;&lt;br&gt;
+&quot;Hey! I’m about to walk into a meeting and can’t find the client list you sent yesterday. Can you just forward it to my Gmail real quick so I can grab it on my phone?” &lt;br&gt;
 You know John needs the list. But, you recall IT&#39;s reminders about file handling. 
 &lt;div class=&quot;callout-box&quot;&gt;&lt;br&gt;&lt;strong&gt;What do you do?&lt;/strong&gt;
-*[[Attach it to an email and send promptly-&gt;S1 Incorrect]]
-*[[Use secure folder link and send through Teams-&gt;S1 Correct]]
+*[[Forward the document to his Gmail so he can access it from his phone quickly.-&gt;S1 Incorrect]]
+*[[Send a secure folder link via Teams and remind him he can access it from his mobile Teams app.-&gt;S1 Correct]]
 &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="6" name="S1 Correct" tags="" position="650,25" size="100,100">&lt;&lt;set $score += 10&gt;&gt;
 &lt;div class=&quot;callout-box&quot;&gt;✅ Correct! You avoided a risky behavior by applying secure handling practices. Following proper communication and file management protocols helps prevent unauthorized disclosure of sensitive data and supports compliance with CMMC Level 2 controls. This type of decision also leaves a positive audit trail showing good cyber hygiene.
@@ -208,10 +216,10 @@ You know John needs the list. But, you recall IT&#39;s reminders about file hand
 
 [[Back to cyber training!-&gt;Role-based task execution]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Scenario 2" tags="" position="900,25" size="100,100">&lt;div class=&quot;callout-box&quot;&gt;10:00 AM. 
 Your email application chimes. Sparing a quick glance, you see that the project manager replied to an email you sent late yesterday.
-&quot;I got your message and the team has some time available to collaborate on your project. Can you give the whole team access to your project folder? Together, we can get this task knocked out by early next week! Glad to help!!&quot;
+&quot;I got your message and the team has some time available to collaborate on your project right now. We are ready to jump in. Can you give the full team access to the folder?&quot;
 &lt;div class=&quot;callout-box&quot;&gt;What’s your response?
-*[[Grant access to the team-&gt;S2 Incorrect]]
-*[[Assign role-based access-&gt;S2 Correct]]
+*[[Grant access to the team to avoid delays.-&gt;S2 Incorrect]]
+*[[Assign specific access only to individuals directly supporting your project.-&gt;S2 Correct]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="S2 Correct" tags="" position="1025,25" size="100,100">&lt;&lt;set $score += 10&gt;&gt;
 &lt;div class=&quot;callout-box&quot;&gt;✅ Correct! You applied secure permissions by limiting access to project files based on need-to-know and least privilege. This aligns with CMMC requirements for access control and ensures that permissions can be justified during an audit. Proper file permissions also reduce the risk of data compromise.
 [[Back to training!-&gt;Need-to-know]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="S2 Incorrect" tags="" position="1150,25" size="100,100">&lt;&lt;set $score -= 10&gt;&gt;
@@ -221,10 +229,10 @@ Granting broad or unnecessary file access can lead to unauthorized disclosure of
 [[Back to training!-&gt;Need-to-know]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Scenario 3" tags="" position="25,150" size="100,100">&lt;div class=&quot;callout-box&quot;&gt;11:00 AM. 
 Pat from the marketing department stops by your office and gives you a big grin. You know she wants something. Pat excitedly explains:
 
-&quot;I&#39;m working on the new website and marketing slicks for sales. I heard you have the latest draft of the big project! We are so excited! Can you send me a secure link to the file? I can&#39;t wait to get some ideas prototyped!&quot;
+&quot;Hey, I heard your team is working on the big project. Can you send me the latest version so I can incorporate it into our marketing slicks? I’m sure it’s fine.&quot;
 &lt;div class=&quot;callout-box&quot;&gt;Your move:
-*[[First check to make sure Pat should have access-&gt;S3 Correct]]
-*[[Send the secure file link, it&#39;s Pat and she is an employee-&gt;S3 Incorrect]]
+*[[Check with the project owner to confirm Pat’s need-to-know before sharing.-&gt;S3 Correct]]
+*[[Send the link. Pat’s on the team and is probably cleared.-&gt;S3 Incorrect]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="S3 Correct" tags="" position="150,150" size="100,100">&lt;&lt;set $score += 10&gt;&gt;
 &lt;div class=&quot;callout-box&quot;&gt;✅ Correct! You confirmed the requester&#39;s legitimate need-to-know before sharing the information. This demonstrates proper access control, protects sensitive data, and ensures actions can be defended in an audit. Applying need-to-know is critical to maintaining a secure workflow.
 
@@ -233,14 +241,14 @@ Pat from the marketing department stops by your office and gives you a big grin.
 
 &lt;&lt;set $flags to $flags.concat(&quot;Need-to-Know Violation&quot;)&gt;&gt;
 [[Let&#39;s get back to training!-&gt;Secure file/project permissions]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Scenario 4" tags="" position="400,150" size="100,100">&lt;div class=&quot;callout-box&quot;&gt;1:00 PM. 
-You computer reminder chimes. You have a 3pm deadline! You quickly prepare to upload final project documents to the shared team folder. These files include client information and internal approval forms that must be signed off before release.
+Your computer reminder chimes. You have a 3pm deadline! You quickly prepare to upload final project documents to the shared team folder. These files include client information and internal approval forms that must be signed off before release.
 
 A last-minute deadline is looming, you’re tempted to skip the final review step and upload the files now. After all, you can always update them later if needed.
 &lt;div class=&quot;callout-box&quot;&gt;What do you do?
-*[[Final review can be done after you share-&gt;S4 Incorrect]]
-*[[Review first and then share-&gt;S4 Correct]]
+*[[Upload now and make revisions later.-&gt;S4 Incorrect]]
+*[[Review first and then share.-&gt;S4 Correct]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="S4 Correct" tags="" position="525,150" size="100,100">&lt;&lt;set $score += 10&gt;&gt;
-&lt;div class=&quot;callout-box&quot;&gt;✅ Correct! Following the approval process ensures your project files are accurate, authorized, and defensible during an audit. Skipping steps may save time now but can lead to compliance gaps later. Not to mention accidentail spilliage of sensitive information.
+&lt;div class=&quot;callout-box&quot;&gt;✅ Correct! Following the approval process ensures your project files are accurate, authorized, and defensible during an audit. Skipping steps may save time now but can lead to compliance gaps later. Not to mention accidental spilliage of sensitive information.
 
 [[Can you stay compliant through the rest of your day? Let’s find out. -&gt;Scenario 5]]&lt;/div&gt;
 
@@ -249,12 +257,11 @@ A last-minute deadline is looming, you’re tempted to skip the final review ste
 &lt;&lt;set $flags to $flags.concat(&quot;Skipped Approvals&quot;)&gt;&gt;
 
 [[Can you stay compliant through the rest of your day? Let’s find out. -&gt;Scenario 5]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Scenario 5" tags="" position="775,150" size="100,100">&lt;div class=&quot;callout-box&quot;&gt;2:00 PM. 
-You are uploading final project files into the team’s shared drive when you notice several old project folders and outdated versions of documents, some of which contain sensitive data. These files have not been reviewed in months, and it&#39;s unclear who still needs access to them.
+You are uploading final project files into the team’s shared drive when you notice several outdated folders with sensitive data, but you’ve got 10 other tasks due by end of day. 
 
-The drive is cluttered, and leaving unneeded sensitive files could create unnecessary risk, especially if permissions have not been reviewed or adjusted. On the other hand, you’re on a tight deadline...
-&lt;div class=&quot;callout-box&quot;&gt;What do you do?
-*[[Leave them as is-&gt;S5 Incorrect]]
-*[[Review and archive/purge-&gt;S5 Correct]]
+&lt;div class=&quot;callout-box&quot;&gt;Should you clean it up now or add it to your mental to-do list for next week?
+*[[Leave the files alone for now—there’s too much to do today.-&gt;S5 Incorrect]]
+*[[Quickly flag, review, and archive sensitive outdated files to minimize exposure.-&gt;S5 Correct]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="S5 Correct" tags="" position="900,150" size="100,100">&lt;&lt;set $score += 10&gt;&gt;
 &lt;div class=&quot;callout-box&quot;&gt;✅ Correct! Proactively reviewing and archiving or purging outdated project files helps ensure that sensitive data is only retained where necessary, and that access permissions remain appropriate. Secure file management like this supports CMMC Level 2 requirements for access control and data retention, and helps produce a clean, defensible audit trail.
 [[Next-&gt;Scenario 6]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="S5 Incorrect" tags="" position="1025,150" size="100,100">&lt;&lt;set $score -= 10&gt;&gt;
@@ -263,10 +270,10 @@ The drive is cluttered, and leaving unneeded sensitive files could create unnece
 [[Next-&gt;Scenario 6]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Scenario 6" tags="" position="1150,150" size="100,100">&lt;div class=&quot;callout-box&quot;&gt;3:00 PM.
 You are preparing to add an external contractor to your project workspace. The contractor will be helping with final reviews, but the project folder also contains internal planning documents, client data, and financial details unrelated to their work.
 
-You are short on time as this is due NOW! Do you add them to the entire project folder or do you restrict their access to only the files they need?
-&lt;div class=&quot;callout-box&quot;&gt;Your next step:
-*[[Give access to the entire team-&gt;S6 Incorrect]]
-*[[Set limited, documented access-&gt;S6 Correct]]
+You are short on time as this is due NOW! The contractor is asking for access so they can ‘just look around and get familiar.’ You consider adding them to the full folder to avoid slowing them down.
+&lt;div class=&quot;callout-box&quot;&gt;What is your next step?
+*[[Give full access so they can self-orient.-&gt;S6 Incorrect]]
+*[[Grant only access to specific files they need and document it.-&gt;S6 Correct]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="S6 Correct" tags="" position="25,275" size="100,100">&lt;&lt;set $score += 10&gt;&gt;
 &lt;div class=&quot;callout-box&quot;&gt;✅ Correct! Granting access based on least privilege ensures that external collaborators can only access what is necessary for their work. This practice directly supports CMMC Level 2 access control requirements and helps protect sensitive data. It also creates a clear, auditable record of access decisions.
 [[Next-&gt;Scenario 7]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="S6 Incorrect" tags="" position="150,275" size="100,100">&lt;&lt;set $score -= 10&gt;&gt;
@@ -278,46 +285,43 @@ You receive a Teams message from your project manager asking you to quickly gran
 You have edit permissions on the folder, technically, you could add the contractor. 
 However, per the organization’s security process, all access changes must be requested through IT with documented approvals. You know this. It protects against unauthorized access and ensures an audit trail of permission changes.
 
-The project manager says, “It’s urgent, can you just add them now so they can get started?”
+The project manager says, “It’s urgent, can you just add them now, so they can get started?”
 &lt;div class=&quot;callout-box&quot;&gt;What do you do?
-*[[Submit the access request through IT-&gt;S7 Correct]]
-*[[Grant access directly-&gt;S7 Incorrect]]
+*[[Submit a formal request through IT per protocol.-&gt;S7 Correct]]
+*[[Add them now and follow up with IT later.-&gt;S7 Incorrect]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="S7 Correct" tags="" position="400,275" size="100,100">&lt;&lt;set $score += 10&gt;&gt;
 &lt;div class=&quot;callout-box&quot;&gt;✅ Correct! Secure task execution requires following the documented process for granting access, even when you have technical ability to bypass it. This ensures proper approval, prevents unauthorized access, and creates required audit records.
 [[Next-&gt;Scenario 8]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="S7 Incorrect" tags="" position="525,275" size="100,100">&lt;&lt;set $score -= 10&gt;&gt;
 &lt;div class=&quot;callout-box&quot;&gt;❌ Granting access outside of the approved process introduces serious compliance risk. Unauthorized or undocumented permissions violate CMMC access control requirements. Always follow the secure workflow for permission changes.
 &lt;&lt;set $flags to $flags.concat(&quot;Undocumented Changes&quot;)&gt;&gt;
 [[Next-&gt;Scenario 8]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Scenario 8" tags="" position="650,275" size="100,100">&lt;div class=&quot;callout-box&quot;&gt;5:00 PM. 
-It’s the end of your workday. You are stepping away from your desk for the evening, but it will all be here tomorrow! You glance at your desk. 
-Your laptop is open, with project files and email visible on-screen. The screen saver will lock it down in a bit. You also hate shutting your computer down as you have to open it all back up again in the morning.
+It’s the end of your workday. You are stepping away from your desk and glance back at your workstation. Your laptop is open with project files and email still visible on-screen. However, you are running late, your computer will lock itself soon anyway, and you hate reopening all your apps in the morning.
 &lt;div class=&quot;callout-box&quot;&gt;Do you:
-*[[Let the screen saver do its job and head out-&gt;S8 Incorrect]]
-*[[Lock your screen and shut down your computer-&gt;S8 Correct]]
+*[[Let the screen saver do its job and head out.-&gt;S8 Incorrect]]
+*[[Take 10 seconds to lock and shut down properly.-&gt;S8 Correct]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="S8 Correct" tags="" position="775,275" size="100,100">&lt;&lt;set $score += 10&gt;&gt;
 &lt;div class=&quot;callout-box&quot;&gt;✅ Physical security is essential for audit readiness. Locking your screen and securing devices when unattended is a core cyber hygiene practice. It prevents unauthorized access, protects controlled data, and demonstrates attention to CMMC access control requirements. Good habits like this reduce daily risk and strengthen audit readiness.
 [[Finish your day and review your compliance readiness summary-&gt;Summary]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="S8 Incorrect" tags="" position="900,275" size="100,100">&lt;&lt;set $score -= 10&gt;&gt;
 &lt;div class=&quot;callout-box&quot;&gt;❌ Unsecured devices are a common audit finding. Leaving an unlocked screen, even in a trusted office, introduces compliance risk. Anyone could view or tamper with sensitive data. CMMC Level 2 requires active protections for unattended systems. Always lock your screen and secure devices when stepping away.
 &lt;&lt;set $flags to $flags.concat(&quot;Screen Unlocked&quot;)&gt;&gt;
-[[Finish your day and review your compliance readiness summary-&gt;Summary]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Summary" tags="" position="1025,275" size="100,100">&lt;p style=&quot;font-size: 24px;&quot;&gt;&lt;center&gt;Congratulations — you’ve completed:
-Secure Your Workflow: 
-The Compliance Habits Game! &lt;/center&gt;&lt;/p&gt;
-Role: &lt;&lt;= $role&gt;&gt;
-Final Score: &lt;&lt;= $score&gt;&gt;/80
-&lt;div class=&quot;callout-box&quot;&gt;&lt;&lt;if $score &gt;= 60&gt;&gt;
+[[Finish your day and review your compliance readiness summary-&gt;Summary]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Summary" tags="" position="1025,275" size="100,100">&lt;p style=&quot;font-size: 28px;&quot;&gt;&lt;center&gt;Congratulations! 
+You’ve made it through your work day!&lt;/center&gt;&lt;/p&gt;
+&lt;div class=&quot;callout-box&quot;&gt;&lt;p style=&quot;font-size: 24px;&quot;&gt;How secure was your workflow? 
+Team: &lt;&lt;= $role&gt;&gt;
+Final Score: &lt;&lt;= $score&gt;&gt;/80&lt;/p&gt;&lt;&lt;if $score &gt;= 60&gt;&gt;
 ✅ Excellent — your decisions today reflected strong secure practices. Your daily habits are helping strengthen your organization&#39;s CMMC Level 2 compliance posture.
 &lt;&lt;elseif $score &gt;= 30&gt;&gt;
 ⚠️ You demonstrated some secure practices today, but there are still opportunities to strengthen your daily compliance habits and better support audit readiness.
 &lt;&lt;else&gt;&gt;
 ❌ Your decisions today introduced risks that could impact the organization’s compliance readiness. Improving your day-to-day behaviors will help close these gaps.
 &lt;&lt;/if&gt;&gt;&lt;/div&gt;
-&lt;div class=&quot;callout-box&quot;&gt;Pay more attention to these areas:
+&lt;div class=&quot;callout-box&quot;&gt;These are the areas that gave you the most trouble.
 &lt;&lt;for _flag range $flags&gt;&gt;
 - &lt;&lt;= _flag&gt;&gt;
 &lt;&lt;/for&gt;&gt;&lt;br&gt;&lt;/div&gt;
 &lt;div class=&quot;callout-box&quot;&gt;In this activity, you practiced recognizing and responding to everyday operational decisions that affect your organization’s cybersecurity and audit readiness.  
 
 Through these decisions, you reinforced:  
-
 ✅ Identifying and avoiding risky behaviors in communication, file handling, and access control  
 ✅ Applying secure practices for managing project files and permissions  
 ✅ Using the need-to-know principle when handling information  
@@ -327,40 +331,56 @@ Remember: CMMC compliance is not just a one-time event, it is built through cons
 
 [[Want to try again? Start a New Day-&gt;Start]]&lt;/div&gt;
 
-</tw-passagedata><tw-passagedata pid="30" name="Secure file/project permissions" tags="" position="150,400" size="100,100">&lt;p style=&quot;font-size: 24px;&quot;&gt;&lt;center&gt;Mandatory CyberBrief: 
+</tw-passagedata><tw-passagedata pid="30" name="Secure file/project permissions" tags="" position="150,400" size="100,100">&lt;p style=&quot;font-size: 26px;&quot;&gt;&lt;center&gt;Mandatory Cyber-Brief: 
 Secure Practices for Managing Project Files and Permissions Training&lt;/center&gt;&lt;/p&gt;
-
 &lt;div class=&quot;callout-box&quot;&gt;Review the following operational guidance to strengthen your daily compliance practices. These behaviors help reduce risk and support CMMC Level 2 readiness.&lt;/div&gt;
 &lt;div class=&quot;callout-box&quot;&gt;Proper management of project files and permissions is a cornerstone of operational compliance. 
 *Files containing sensitive data must be stored in approved locations with carefully controlled access. 
 *The principle of least privilege means that only those who need a file to perform their role should have access to it and only for as long as necessary. 
 Practicing secure file management includes regularly reviewing who can access shared folders, avoiding public or unvetted cloud storage, and ensuring access permissions reflect current project needs. These habits reduce risk and help generate strong audit evidence.
+
+To stay compliant:
+*Always complete reviews and approvals before uploading final project files.
+*Periodically review shared folders and remove outdated or unnecessary data.
+*When working with external contractors, grant access only to specific files they need, not entire folders.
+*Use documented IT approval processes for all permission changes.
+*At the end of your workday, lock your screen and shut down your computer to secure sensitive information.
 &lt;div class=&quot;callout-box&quot;&gt;Just as you finish the last slide in your training. 
-You are interrupted again... with a nagging reminder.
-[[Time to put your training into action.-&gt;Scenario 4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Risky behaviors" tags="" position="25,400" size="100,100">&lt;p style=&quot;font-size: 24px;&quot;&gt;&lt;center&gt;Mandatory CyberBrief: 
+You are interrupted again... with a task reminder.
+[[Time to put your training into action.-&gt;Scenario 4]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Risky behaviors" tags="" position="25,400" size="100,100">&lt;p style=&quot;font-size: 26px;&quot;&gt;&lt;center&gt;Mandatory Cyber-Brief: 
 Risky Behaviors in Communication, File Handling, and Access Control Training&lt;/center&gt;&lt;/p&gt;
 &lt;div class=&quot;callout-box&quot;&gt;Review the following operational guidance to strengthen your daily compliance practices. These behaviors help reduce risk and support CMMC Level 2 readiness.&lt;/div&gt;
 &lt;div class=&quot;callout-box&quot;&gt;In a secure organization, even small daily actions can introduce risk if not handled carefully. Simple behaviors (like how you send an email, where you save a file, or who you grant access to) can either protect sensitive data or expose it to threats. 
 *Practicing awareness of risky behaviors means slowing down to verify recipients, using approved storage locations, applying appropriate sharing methods, and following access control procedures. 
 *Secure communication and file handling help ensure sensitive information stays within appropriate boundaries, and every choice you make contributes to the organization’s overall compliance posture.
+To minimize risk:
+*Never attach sensitive files to emails, even internally. Always use secure folder links shared via Teams or approved channels.
+*Verify recipients and sharing methods before sending information.
+*Do not bypass access controls, even for &quot;quick&quot; requests.
 &lt;div class=&quot;callout-box&quot;&gt;Just as you’re reviewing this cyberbriefing, a coworker interrupts with a quick request... 
 [[Time to put your training into action.-&gt;Scenario 1]]&lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="32" name="Need-to-know" tags="" position="275,400" size="100,100">&lt;p style=&quot;font-size: 24px;&quot;&gt;&lt;center&gt;Mandatory CyberBrief: 
+</tw-passagedata><tw-passagedata pid="32" name="Need-to-know" tags="" position="275,400" size="100,100">&lt;p style=&quot;font-size: 26px;&quot;&gt;&lt;center&gt;Mandatory Cyber-Brief: 
 Applying the Need-to-Know Principle&lt;/center&gt;&lt;/p&gt;
-
 &lt;div class=&quot;callout-box&quot;&gt;Review the following operational guidance to strengthen your daily compliance practices. These behaviors help reduce risk and support CMMC Level 2 readiness.&lt;/div&gt;
 &lt;div class=&quot;callout-box&quot;&gt;The need-to-know principle helps protect sensitive information by ensuring that data is shared only with individuals who require it to perform their assigned duties. It is not enough to trust that a request seems reasonable. 
 *Good practice means verifying whether the requester truly has a business need for access. Applying this principle in daily work prevents accidental data leakage and strengthens compliance. 
 *Before providing information or access, ask: Does this person truly need this information to do their job? 
 Consistent application of need-to-know builds a culture of secure information handling.
+To apply this principle:
+*Do not share files based solely on familiarity or informal requests.
+*Always verify whether the person truly needs the file to perform their work.
+*If unsure, confirm the request with a manager or team lead before granting access.
 &lt;div class=&quot;callout-box&quot;&gt;Just as you’re reviewing this, a coworker interrupts with a quick request... 
 [[Time to put your training into action.-&gt;Scenario 3]]&lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="33" name="Role-based task execution" tags="" position="400,400" size="100,100">&lt;p style=&quot;font-size: 24px;&quot;&gt;&lt;center&gt;Mandatory CyberBrief: 
+</tw-passagedata><tw-passagedata pid="33" name="Role-based task execution" tags="" position="400,400" size="100,100">&lt;p style=&quot;font-size: 26px;&quot;&gt;&lt;center&gt;Mandatory Cyber-Brief: 
 Role-Based Compliance in Task Execution Training&lt;/center&gt;&lt;/p&gt;
-
 &lt;div class=&quot;callout-box&quot;&gt;Review the following operational guidance to strengthen your daily compliance practices. These behaviors help reduce risk and support CMMC Level 2 readiness.&lt;/div&gt;
 &lt;div class=&quot;callout-box&quot;&gt;Each role in the organization carries specific responsibilities, and specific limits. Role-based compliance ensures that sensitive actions, such as approving access requests or handling controlled information, are performed only by authorized individuals. 
 *Performing tasks outside your role can unintentionally violate compliance controls and introduce audit risk. Practicing role-based compliance involves knowing what your role authorizes you to do, and respecting boundaries when requests fall outside those responsibilities. 
+To stay compliant:
+*Always apply permissions based on least privilege.
+*Do not grant blanket access. Instead, assign file access based on roles and responsibilities.
+*If you have the technical ability to make a change (like adding someone to a folder), but it’s not within your role to approve it, submit the request through proper channels like IT.
 When in doubt, escalate or consult the appropriate role-owner. This reinforces secure workflows and ensures tasks are consistently performed in compliance with CMMC expectations.
 &lt;div class=&quot;callout-box&quot;&gt;Just as you finish reviewing, an email distracts you... 
 [[Time to put your training into action.-&gt;Scenario 2]]&lt;/div&gt;</tw-passagedata></tw-storydata>
